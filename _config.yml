@@ -1,0 +1,14 @@
+# Site settings
+title: Cyber Defenders
+email: cyberdefendersprogram@gmail.com
+description: Learn the key concepts of Cyber Security through hands on Labs and Exercises
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+port: 3000
+
+sass:
+  sass_dir: assets/css
+  style: :nested

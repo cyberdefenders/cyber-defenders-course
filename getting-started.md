@@ -5,8 +5,9 @@ title: Getting Started
 description: Temporary page for course information being fed through the course template served from markdown file
 permalink: /getting-started/
 ---
-
 Bootstrap provides an easy-to-use framework of ready-made styles, layout tools, and interactive components, allowing developers to create websites and applications that are visually appealing, functionally rich, and accessible out of the box.
+
+
 
 ## Overview and Limitations
 

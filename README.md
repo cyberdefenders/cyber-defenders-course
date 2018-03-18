@@ -8,10 +8,10 @@ Course documentation is written in markdown and is converted to html when the si
 
 Since the markdown is converted to html, Youtube videos can be embedded by adding the following code directly into the markdown:
 
-<br>
+`<br>
 <div class="embed-responsive embed-responsive-16by9">
   *Embedded link from youtube*
 </div>
-<br><br>
+<br><br>`
 
 The wrapping class makes the youtube video resize with the website. This is done using bootstrap.

@@ -1,0 +1,54 @@
+- title: Getting started
+  pages:
+    - title: Introduction
+    - title: Career Paths
+    - title: Pre-Requisites
+    - title: Tools
+    - title: Testing Environment
+    - title: What's Next
+
+- title: Penetration Testing
+  pages:
+    - title: Overview
+    - title: Environment Setup
+    - title: Reconaissance & Scanning
+    - title: >
+            Lab: Attack Demo >-
+    - title: Exercise Walkthrough
+
+- title: Automation Attacks
+  pages:
+    - title: Overview
+    - title: Automation Attacks
+    - title: Role In Cyber Security
+    - title: Botnets
+    - title: Applying Automation
+    - title: >
+           Lab: DDOS Attacks >-
+    - title: Exercise Walthrough
+
+- title: Network Security
+  pages:
+    - title: Overview
+    - title: Web Browsing
+    - title: First Step
+    - title: Second Step
+    - title: Third Step
+    - title: >
+           Lab: Network Scanning >-
+    - title: Exercise Walthrough
+
+- title: Cyber Security Research
+  pages:
+    - title: Overview
+    - title: Researching
+    - title: Malware Analysis
+    - title: Additional Topics
+
+- title: Potential Projects
+  pages:
+    - title: Overview
+    - title: Additional Resources
+    - title: Example Project A
+    - title: Example Project B
+    - title: Example Project C

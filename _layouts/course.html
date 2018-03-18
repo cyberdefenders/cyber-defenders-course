@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+{% include side_nav_toc.html %}
+
+<main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bg-success">
+  <h1 class="course-title" id="content">{{ page.title | smartify }}</h1>
+  <p class="course-lead">{{ page.description | smartify }}</p>
+  {{ content }}
+</main>

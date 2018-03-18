@@ -45,3 +45,35 @@
 .navbar-nav a.active {
   border-bottom: 2px solid #616161;
 }
+
+.nav-link {
+  text-decoration: none;
+  display: block;
+  padding: .25rem 2rem;
+  font-size: 90%;
+  color: rgba(0,0,0,.65);
+}
+
+.nav-link:hover, .nav-link:focus {
+  text-decoration: none;
+  color: rgba(0,0,0,.85);
+}
+
+
+.course-toc-link {
+  text-decoration: none;
+  display: block;
+  padding: .25rem 1.0rem;
+  font-weight: 500;
+  color: rgba(0,0,0,.85);
+}
+
+.course-toc-link:hover, .course-link:focus {
+  text-decoration: none;
+  color: rgba(0,0,0,.95);
+}
+
+.main-content {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+}

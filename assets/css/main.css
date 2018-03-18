@@ -73,7 +73,16 @@
   color: rgba(0,0,0,.95);
 }
 
+.course-page {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+}
+
 .main-content {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
   min-height: 100vh; /* These two lines are counted as one :-)       */
+}
+
+.course-sidenav {
+  min-height: 100%;
 }

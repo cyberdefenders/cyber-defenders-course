@@ -2,10 +2,16 @@
 layout: default
 ---
 
-{% include side_nav_toc.html %}
+<div class="container-fluid course-page bg-light ">
+  <div class="row">
 
-<main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bg-success">
-  <h1 class="course-title" id="content">{{ page.title | smartify }}</h1>
-  <p class="course-lead">{{ page.description | smartify }}</p>
-  {{ content }}
-</main>
+    {% include side_nav_toc.html %}
+
+    <div class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bg-light border-left main-content ">
+      <h1 class="course-title" id="content">{{ page.title | smartify }}</h1>
+      <p class="course-lead">{{ page.description | smartify }}</p>
+      {{ content }}
+    </div>
+
+  </div>
+</div>

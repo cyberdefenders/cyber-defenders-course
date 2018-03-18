@@ -5,9 +5,13 @@ title: Getting Started
 description: Temporary page for course information being fed through the course template served from markdown file
 permalink: /getting-started/
 ---
+
 Bootstrap provides an easy-to-use framework of ready-made styles, layout tools, and interactive components, allowing developers to create websites and applications that are visually appealing, functionally rich, and accessible out of the box.
 
-
+<br>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/C1mVcP0Qems" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div><br><br>
 
 ## Overview and Limitations
 

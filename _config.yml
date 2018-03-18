@@ -2,7 +2,9 @@
 title: Cyber Defenders
 email: cyberdefendersprogram@gmail.com
 description: Learn the key concepts of Cyber Security through hands on Labs and Exercises
-baseurl: /nichandy.github.io/
+baseurl:
+url: https://nichandy.github.io/
+
 
 
 # Build settings

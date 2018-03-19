@@ -17,9 +17,15 @@
   text-transform: uppercase;
   opacity: 1;
 }
-.icon {
-  color: #616161;
 
+.nav-item a {
+  color: #E0E0E0;
+  opacity: 0.5;
+}
+
+.nav-item a:hover {
+  color: #E0E0E0;
+  opacity: 0.8;
 }
 .navbar .navbar-header .navbar-brand {
   color: #616161;

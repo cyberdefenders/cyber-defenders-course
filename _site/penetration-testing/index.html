@@ -21,8 +21,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  <!-- AnchorJS -->
+  <!-- AnchorJS
   <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"></script>
+	-->
 
 
 </head>
@@ -61,7 +62,7 @@
       <div class="collapse navbar-collapse" id="mainNav">
         <div class="navbar-nav">
           <a class="nav-item nav-link " href="/cyber-defenders-course/">Overview</a>
-          <a class="nav-item nav-link active" href="/cyber-defenders-course//getting-started/">Course</a>
+          <a class="nav-item nav-link active" href="/cyber-defenders-course/getting-started/">Course</a>
           <a class="nav-item nav-link " href="/cyber-defenders-course/exercises">Exercises</a>
           <a class="nav-item nav-link " href="/cyber-defenders-course/feedback">Feedback</a>
         </div>
@@ -76,12 +77,14 @@
 
     <!-- Side Navigation for Course Pages -->
 
-<div class="col-12 col-md-3 col-xl-2 py-md-3 course-sidenav bg-light">
+<div class="col-12 col-md-3 col-xl-2 py-md-4 course-sidenav bg-light">
 
   <div class="course-toc-item">
-    <a href="#nav-info" class="course-toc-link" data-toggle="collapse" aria-expanded="false" aria-controls="nav-info">Getting Started</a>
+    <a href="#nav-info" data-toggle="collapse" aria-expanded="false" aria-controls="nav-info">
+      <a class="course-toc-link" href="/cyber-defenders-course//getting-started/">Getting Started</a>
+    </a>
 
-    <div class="collapse" id="nav-info">
+    <div class="collapse " id="nav-info">
       <div class="nav">
         <ul class="nav flex-column">
           <li class="nav-item py-0">
@@ -110,9 +113,11 @@
   </div>
 
   <div class="course-toc-item">
-    <a href="#nav-pen-test" class="course-toc-link" data-toggle="collapse" aria-expanded="false" aria-controls="nav-info">Penetration Testing</a>
+    <a href="#nav-pen-test" data-toggle="collapse" aria-expanded="false" aria-controls="nav-pen-test">
+      <a class="course-toc-link" href="/cyber-defenders-course//penetration-testing/">Penetration Testing</a>
+    </a>
 
-    <div class="collapse" id="nav-pen-test">
+    <div class="collapse show" id="nav-pen-test">
       <div class="nav">
         <ul class="nav flex-column">
           <li class="nav-item py-0">
@@ -138,9 +143,11 @@
   </div>
 
   <div class="course-toc-item">
-    <a href="#nav-automation" class="course-toc-link" data-toggle="collapse" aria-expanded="false" aria-controls="nav-info">Automation Attacks</a>
+    <a href="nav-automation" data-toggle="collapse" aria-expanded="false" aria-controls="nav-automation">
+      <a class="course-toc-link" href="/cyber-defenders-course//automation-attacks/">Automation Attacks</a>
+    </a>
 
-    <div class="collapse" id="nav-automation">
+    <div class="collapse " id="nav-automation">
       <div class="nav">
         <ul class="nav flex-column">
           <li class="nav-item py-0">
@@ -172,9 +179,11 @@
   </div>
 
   <div class="course-toc-item">
-    <a href="#nav-network" class="course-toc-link" data-toggle="collapse" aria-expanded="false" aria-controls="nav-info">Network Security</a>
+    <a href="#nav-network" data-toggle="collapse" aria-expanded="false" aria-controls="nav-network">
+      <a class="course-toc-link" href="/cyber-defenders-course//network-security/">Network Security</a>
+    </a>
 
-    <div class="collapse" id="nav-network">
+    <div class="collapse " id="nav-network">
       <div class="nav">
         <ul class="nav flex-column">
           <li class="nav-item py-0">
@@ -209,9 +218,9 @@
   </div>
 
   <div class="course-toc-item">
-    <a href="#nav-research" class="course-toc-link" data-toggle="collapse" aria-expanded="false" aria-controls="nav-info">Cyber Security Research</a>
+    <a href="#nav-research" data-toggle="collapse" aria-expanded="false" aria-controls="nav-research"><a class="course-toc-link" href="/cyber-defenders-course//cyber-security-research/">Cyber Security Research</a></a>
 
-    <div class="collapse" id="nav-research">
+    <div class="collapse " id="nav-research">
       <div class="nav">
         <ul class="nav flex-column">
           <li class="nav-item py-0">
@@ -234,9 +243,9 @@
   </div>
 
   <div class="course-toc-item">
-    <a href="#nav-projects" class="course-toc-link" data-toggle="collapse" aria-expanded="false" aria-controls="nav-info">Project Ideas</a>
+    <a href="nav-projects" data-toggle="collapse" aria-expanded="false" aria-controls="nav-projects"><a class="course-toc-link" href="/cyber-defenders-course//project-ideas/">Project Ideas</a></a>
 
-    <div class="collapse" id="nav-projects">
+    <div class="collapse " id="nav-projects">
       <div class="nav">
         <ul class="nav flex-column">
           <li class="nav-item py-0">
@@ -267,11 +276,10 @@
     <div class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bg-light border-left main-content ">
       <h1 class="course-title" id="content">Penetration Testing</h1>
       <p class="course-lead">Overview of Cyber Security Topics and Career Paths</p>
-      <p><br /></p>
-<div class="embed-responsive embed-responsive-16by9">
+      <div class="embed-responsive embed-responsive-16by9">
   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BdSCIn50xjc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
 </div>
-<p><br /><br /></p>
+<p><br /></p>
 
 <h1 id="overview">Overview</h1>
 <p>A penetration tester tests the security of applications or networks to find vulnerabilities. Finding vulnerabilities is key to staying a step ahead of hackers who would want to do damage. In order to protect against a hacker, you must in a way think like a hacker. To get a better idea of how hacking works we will go through a demonstration of an attack.</p>
@@ -397,13 +405,13 @@ $ exploit
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<script>
+<!-- <script>
   anchors.options = {
     icon: '#',
     placement: 'right',
   };
   anchors.add('h1','h2','h3','h4','h5','h6');
-</script>
+</script> -->
 
   
 </body>

@@ -4,11 +4,11 @@ course: active
 title: Penetration Testing
 description: Overview of Cyber Security Topics and Career Paths
 permalink: /penetration-testing/
+penetration-testing: show
 ---
-<br>
 <div class="embed-responsive embed-responsive-16by9">
   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BdSCIn50xjc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div><br><br>
+</div><br>
 
 # Overview
 A penetration tester tests the security of applications or networks to find vulnerabilities. Finding vulnerabilities is key to staying a step ahead of hackers who would want to do damage. In order to protect against a hacker, you must in a way think like a hacker. To get a better idea of how hacking works we will go through a demonstration of an attack.

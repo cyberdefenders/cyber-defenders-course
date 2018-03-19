@@ -21,8 +21,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  <!-- AnchorJS -->
+  <!-- AnchorJS
   <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"></script>
+	-->
 
 
 </head>
@@ -61,7 +62,7 @@
       <div class="collapse navbar-collapse" id="mainNav">
         <div class="navbar-nav">
           <a class="nav-item nav-link " href="/cyber-defenders-course/">Overview</a>
-          <a class="nav-item nav-link active" href="/cyber-defenders-course//getting-started/">Course</a>
+          <a class="nav-item nav-link active" href="/cyber-defenders-course/getting-started/">Course</a>
           <a class="nav-item nav-link " href="/cyber-defenders-course/exercises">Exercises</a>
           <a class="nav-item nav-link " href="/cyber-defenders-course/feedback">Feedback</a>
         </div>
@@ -76,12 +77,14 @@
 
     <!-- Side Navigation for Course Pages -->
 
-<div class="col-12 col-md-3 col-xl-2 py-md-3 course-sidenav bg-light">
+<div class="col-12 col-md-3 col-xl-2 py-md-4 course-sidenav bg-light">
 
   <div class="course-toc-item">
-    <a href="#nav-info" class="course-toc-link" data-toggle="collapse" aria-expanded="false" aria-controls="nav-info">Getting Started</a>
+    <a href="#nav-info" data-toggle="collapse" aria-expanded="false" aria-controls="nav-info">
+      <a class="course-toc-link" href="/cyber-defenders-course//getting-started/">Getting Started</a>
+    </a>
 
-    <div class="collapse" id="nav-info">
+    <div class="collapse " id="nav-info">
       <div class="nav">
         <ul class="nav flex-column">
           <li class="nav-item py-0">
@@ -110,9 +113,11 @@
   </div>
 
   <div class="course-toc-item">
-    <a href="#nav-pen-test" class="course-toc-link" data-toggle="collapse" aria-expanded="false" aria-controls="nav-info">Penetration Testing</a>
+    <a href="#nav-pen-test" data-toggle="collapse" aria-expanded="false" aria-controls="nav-pen-test">
+      <a class="course-toc-link" href="/cyber-defenders-course//penetration-testing/">Penetration Testing</a>
+    </a>
 
-    <div class="collapse" id="nav-pen-test">
+    <div class="collapse " id="nav-pen-test">
       <div class="nav">
         <ul class="nav flex-column">
           <li class="nav-item py-0">
@@ -138,9 +143,11 @@
   </div>
 
   <div class="course-toc-item">
-    <a href="#nav-automation" class="course-toc-link" data-toggle="collapse" aria-expanded="false" aria-controls="nav-info">Automation Attacks</a>
+    <a href="nav-automation" data-toggle="collapse" aria-expanded="false" aria-controls="nav-automation">
+      <a class="course-toc-link" href="/cyber-defenders-course//automation-attacks/">Automation Attacks</a>
+    </a>
 
-    <div class="collapse" id="nav-automation">
+    <div class="collapse " id="nav-automation">
       <div class="nav">
         <ul class="nav flex-column">
           <li class="nav-item py-0">
@@ -172,9 +179,11 @@
   </div>
 
   <div class="course-toc-item">
-    <a href="#nav-network" class="course-toc-link" data-toggle="collapse" aria-expanded="false" aria-controls="nav-info">Network Security</a>
+    <a href="#nav-network" data-toggle="collapse" aria-expanded="false" aria-controls="nav-network">
+      <a class="course-toc-link" href="/cyber-defenders-course//network-security/">Network Security</a>
+    </a>
 
-    <div class="collapse" id="nav-network">
+    <div class="collapse show" id="nav-network">
       <div class="nav">
         <ul class="nav flex-column">
           <li class="nav-item py-0">
@@ -209,9 +218,9 @@
   </div>
 
   <div class="course-toc-item">
-    <a href="#nav-research" class="course-toc-link" data-toggle="collapse" aria-expanded="false" aria-controls="nav-info">Cyber Security Research</a>
+    <a href="#nav-research" data-toggle="collapse" aria-expanded="false" aria-controls="nav-research"><a class="course-toc-link" href="/cyber-defenders-course//cyber-security-research/">Cyber Security Research</a></a>
 
-    <div class="collapse" id="nav-research">
+    <div class="collapse " id="nav-research">
       <div class="nav">
         <ul class="nav flex-column">
           <li class="nav-item py-0">
@@ -234,9 +243,9 @@
   </div>
 
   <div class="course-toc-item">
-    <a href="#nav-projects" class="course-toc-link" data-toggle="collapse" aria-expanded="false" aria-controls="nav-info">Project Ideas</a>
+    <a href="nav-projects" data-toggle="collapse" aria-expanded="false" aria-controls="nav-projects"><a class="course-toc-link" href="/cyber-defenders-course//project-ideas/">Project Ideas</a></a>
 
-    <div class="collapse" id="nav-projects">
+    <div class="collapse " id="nav-projects">
       <div class="nav">
         <ul class="nav flex-column">
           <li class="nav-item py-0">
@@ -267,17 +276,151 @@
     <div class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bg-light border-left main-content ">
       <h1 class="course-title" id="content">Network Security</h1>
       <p class="course-lead">Overview of Cyber Security Topics and Career Paths</p>
-      <p><br /></p>
-<div class="embed-responsive embed-responsive-16by9">
+      <div class="embed-responsive embed-responsive-16by9">
   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/c0K-aPhAajM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
 </div>
-<p><br /><br /></p>
+<p><br /></p>
+
+<h2 id="overview">Overview</h2>
+<p>Nearly every computing device or software component interacts with a network today. Network Security plays a major role in securing all types of devices. To understand how threats against networks happen we must understand the basics of networking. Internet is made of several hierarchical layers and software and devices in each layer has its own set of vulnerabilities.</p>
+
+<h2 id="birds-eye-view-of-networking">Birds-Eye View of Networking</h2>
+<h4 id="what-actually-happens-when-you-google-for-something-in-your-web-browser">What actually happens when you “google” for something in your web browser?</h4>
+<p>Classic interview/security question because you can go very deep into details of networking. We will do a condensed answer. We use names (domain names) like www.google.com to browse the internet, but the internet uses numbers (IP addresses) like (108.177.98.106). This is similar to concept of phone numbers vs names in your phone’s contacts app.</p>
+<h4 id="first-step">First Step</h4>
+<p>So first step is to translate a domain name → IP address using a central service: ‘Domain Name Service’ (DNS). Your DNS settings are usually pushed to your phone/computer when it initially connects to a cell phone/WiFi network so it knows where to ask for these translations. Companies like Google will register one or more domain names (www.google.com, www.gmail.com, etc) with a special registrar so that everyone knows how to reach the IP address for each of these. DNS has a few root servers that store all the correct translations needed to respond to these questions, but for efficiency a hierarchy of saved DNS translations is used to save these answers (a ‘cache’) at every level in the internet. Your browser will check its own DNS cache for www.google.com’s IP address, then the Operating System cache, then your local home/company router, then your internet service provider’s DNS server, and so on. Sometimes none of these will have the answer and your translation request will reach the root DNS server but this is unusual. Usually you or somebody else nearby has asked for www.google.com’s IP address recently.</p>
+<h4 id="what-are-the-potential-security-issues-of-dns">What are the potential security issues of DNS?</h4>
+<p>What if you typed www.googgle.com? DNS will try to resolve this and if an attacker registered the domain www.googgle.com, DNS will give you an IP address. The Google impersonator can ask for your Google password, send malware, serve ads and make money, etc. from this IP address
+Attack known as <em>typo squatting</em>.</p>
+
+<p>What if one of the caches (browser, operating system, router, service provider DNS server, etc) that initially saved the translation  www.google.com → 108.177.98.106 was maliciously changed to some other IP  www.google.com → 100.100.99.99. The Attacker can now serve their own content from that IP pretending to be www.google.com. This type of attack is known as <em>DNS cache poisoning</em>.</p>
+
+<p>What if someone claimed ownership of www.google.com at the registrar and changed its associated IP address? The attacker can now serve their own content from that IP pretending to be www.google.com. This attack is known as <em>Registrar Hacking</em>.</p>
+
+<p>There are many more vulnerabilities as well! …</p>
+
+<h4 id="second-step">Second Step</h4>
+<p>Your browser will setup a connect to communicate with www.google.com at IP address 108.177.98.106</p>
+
+<p>Uses an agreed upon communication method called TCP (transmission control protocol) that can send data reliably across the entire internet even if small portions of data are lost on a ‘spotty’ connection
+Connection setup goes from your device over Wi-Fi to a router (or directly to a cell phone network) → your internet provider → many → ‘hops’ → of → routing → across → the → internet → … → a Google server at 108.177.98.106</p>
+
+<p>Finalize connection setup and goes all the way back from Google server back to your device</p>
+
+<h4 id="third-step">Third Step</h4>
+<p>Open up ‘Developer Tools’ in Chrome while asking Google a question, navigate to the ‘Other Tab’, and you will see these HTTP request and response headers going to from and from your web browser and Google’s server
+Google will send back many HTTP responses (HTTP OK 200, etc) with text, images, and instructions to make your browser ask for even more content over HTTP.
+These responses travel the return route over the internet → your internet service provider → Wi-Fi/cell phone network → your device
+Some of the content will be customized (search results, account settings menus) if you have visited/logged into www.google.com before</p>
+
+<p>www.google.com probably left a ‘cookie’ (a small file) on your computer last time you visited that your web browser will reference when asking Google for content so Google can customize its page for you</p>
+
+<h4 id="security-analysis">Security Analysis</h4>
+<p>What can go wrong in this step?</p>
+
+<p>What if a website/bad program tricks you into giving up your saved cookie for www.google.com?</p>
+
+<p>Someone can impersonate your last/current browser session with www.google.com (read your gmail, use your google wallet, etc)
+Attack known as ‘session forgery and cross-site scripting (XSS)’</p>
+
+<p>What if something in the network between you and Google (Wi-Fi router, internet provider router, etc,) that handled your request or Google’s response made changes to the content?</p>
+
+<p>Can change the search results, show that your Google wallet has balance when it doesn’t, etc
+Attack known as ‘man in the middle attack (MITM)’</p>
+
+<p>So even in this quick birds-eye networking overview, you’ve seen 5+ attacks based on assumptions made at various network levels
+Every level of network has some vulnerabilities. Attackers are good at choosing where to attack by balancing:</p>
+
+<p>How easy (time/money) is it to attack
+How anonymous can they remain while attacking it
+What power (information/money) they can gain from attacking it</p>
+
+<h2 id="lab-network-scanning">Lab: Network Scanning</h2>
+<p>Wi-Fi: it is everywhere and connects everything</p>
+
+<p>By design it has great coverage an allows any device to communicate with it
+Very easy to observe information being transmitted over Wi-Fi (attackers can use it to steal information or impersonate someone)</p>
 
 <p><br /></p>
 <div class="embed-responsive embed-responsive-16by9">
   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wPwJqtjKS_w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
 </div>
 <p><br /><br /></p>
+
+<p>Lab Exercise Goal:</p>
+
+<p>Observe Wi-Fi network traffic
+Filter and isolate specific traffic going from one device to a specific website
+Observe username and password sent in cleartext for login request to a website</p>
+
+<p>Requirements</p>
+
+<p>A Wi-Fi hotspot (like your phone)/Wi-Fi router you own
+Wireshark installed on your computer</p>
+
+<p>Tool: Wireshark</p>
+
+<p>Free open-source software used for observing network traffic</p>
+
+<p>Network troubleshooting and performance
+Education and learning
+(Attackers) nefarious sniffing of traffic</p>
+
+<p>Download it here: https://www.wireshark.org/#download</p>
+
+<p>Ethical Testing Environment</p>
+
+<p>Use your own local wifi network (your own home wifi router or setup a hotspot on your mobile device in range of your computer)
+Only observe traffic from devices you own</p>
+
+<p>Step 1: Open wireshark and start capture</p>
+
+<p>Observe how much automatic network traffic is ongoing</p>
+
+<p>Operating System Updates
+Email check
+Program updates</p>
+
+<p>Step 2: use your computer’s browser to visit the test website we have setup at http://security.enablingprogrammableself.com/index.php
+Step 3: Filter Wireshark traffic so it only shows traffic going to our test website</p>
+
+<p>Use operating system terminal app: Windows ‘Command Prompt’ / Mac ‘Terminal’
+Once in the terminal app, type: ‘ping security.enablingprogrammableself.com’
+ping is a networking utility that tests the reachability of a domain and in turn also gives us the current DNS IP translation for the domain
+Observe the IP of the destination server in the reply (ie. ‘75.119.202.178’</p>
+
+<p>Step 4: Return to wireshark and enter this as a filter (‘ip.dst’)</p>
+
+<p>You should now only see traffic that is going to our test website</p>
+
+<p>Step 5: For purposes of this exercise we will ALSO filter on traffic leaving our test device (in this case the same computer you are using for Wireshark)</p>
+
+<p>Find your device’s IP by entering ‘ipconfig’ (Windows) or ‘ifconfig’ (Mac/Linux)
+Note your device’s IPv4 address
+Return to wireshark and modify your filter to ALSO filter on ip.src (the IP you just looked up in this step)
+You are now only seeing traffic from your test device reaching our test website</p>
+
+<p>Step 6: Get a ‘clean slate’ to observe traffic</p>
+
+<p>Stop the capture and then hit capture again (you can hit ‘continue without saving’)
+Make sure your IP src/dst filter is enabled again</p>
+
+<p>Step 7: Go visit http://security.enablingprogrammableself.com/index.php again (hit enter, not reload)</p>
+
+<p>Observe the TCP handshake to setup the communication
+Observe the HTTP GET requests
+Click on the first HTTP GET request for /index.php
+Right click on this entry and choose to ‘Follow’ the ‘HTTP Stream’
+How many HTTP responses did the browser return for the original GET request?</p>
+
+<p>Step 8: Enter an email address (fake one is fine, try yourname@fake.email.com), and a password (try yourname_fakepassword) in the browser and hit submit
+Step 9: Go back to Wireshark and change the filter from the TCP stream back to our original ip src/dst combo filter</p>
+
+<p>Scroll to the bottom and work your way backwards until you see a HTTP POST request from your test device
+Once again right click and ‘Follow’–&gt;’HTTP’ stream
+Can you see the email address and password sent in cleartext as part of the POST request body?</p>
+
+<p>Step 10: Remove your filter and observe the deluge of traffic that filled up Wireshark while you were testing your device/website. Good luck finding your transactions without filters! :)</p>
 
     </div>
 
@@ -309,13 +452,13 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<script>
+<!-- <script>
   anchors.options = {
     icon: '#',
     placement: 'right',
   };
   anchors.add('h1','h2','h3','h4','h5','h6');
-</script>
+</script> -->
 
   
 </body>

@@ -19,13 +19,13 @@
 }
 
 .nav-item a {
-  color: #E0E0E0;
-  opacity: 0.5;
+  color: #212121;
+  opacity: 0.1;
 }
 
 .nav-item a:hover {
-  color: #E0E0E0;
-  opacity: 0.8;
+  color: #212121;
+  opacity: 0.3;
 }
 .navbar .navbar-header .navbar-brand {
   color: #616161;

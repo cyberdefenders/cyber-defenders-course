@@ -1,10 +1,10 @@
 ---
 layout: course
 course: active
-title: Getting Started
+title: Cyber Security Overview
 description: Overview of Cyber Security Topics and Career Paths
-permalink: /getting-started/
-getting-started: show
+permalink: /cyber-security-overview/
+cyber-security-overview: show
 ---
 
 <div class="embed-responsive embed-responsive-16by9">

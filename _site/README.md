@@ -14,6 +14,37 @@ Since the markdown is converted to html, Youtube videos can be embedded by addin
 
 The wrapping class makes the youtube video resize with the website. This is done using bootstrap.
 
+## Front Matter
+
+The front matter for each page defines global and page specific variables and layouts. The running list of variables is below.
+```
+---
+layout: course
+course: active
+title: Penetration Testing
+description: Overview of Cyber Security Topics and Career Paths
+permalink: /penetration-testing/
+penetration-testing: show
+estimated-time: 30
+---
+```
+- Layout: default or course
+  * Default - includes navbar and footer
+  * Course - adds a side nav to default layout
+- (page-name): active
+  * Underlines the active page in the navbar (overview, course, submit, feedback)
+- Title and Description
+  * For course pages these are used to for title and lead text under the title.
+- permalink: /name-of-page/
+  * Simplifies the file path and hides the markdown file in the URL
+- (name-of-section): show
+  * Controls which section in the side navigation is expanded. Works for any of the major sections.
+  * Variable names - penetration-testing, cyber-security-overview, cyber-security-research, install, automation-attacks, pre-requisites, network-security, project-ideas
+- estimated-time: number in minutes
+  * The estimated-time.html must be included into the markdown file for this to work.
+  ```
+  {% includes estimated-time.html %}
+  ```
 ## Running Locally
 
 There are three dependencies needed to be able to serve webpage with Jekyll. Jekyll runs into a lot of issues on Windows so it is easiest to just use Linux or Mac. In Windows you can create a [Linux Subsystem](https://docs.microsoft.com/en-us/windows/wsl/install-win10). From the Linux terminal within Windows all of the necessary tools can be installed.

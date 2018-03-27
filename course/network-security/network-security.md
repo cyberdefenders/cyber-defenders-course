@@ -5,7 +5,9 @@ title: Network Security
 description: Overview of Cyber Security Topics and Career Paths
 permalink: /network-security/
 network-security: show
+estimated-time: 30
 ---
+{% include estimated-time.html %}
 
 <div class="embed-responsive embed-responsive-16by9">
   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/c0K-aPhAajM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

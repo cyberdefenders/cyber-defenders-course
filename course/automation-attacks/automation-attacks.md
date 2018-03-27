@@ -5,7 +5,10 @@ title: Automation Attacks
 description: Overview of Cyber Security Topics and Career Paths
 permalink: /automation-attacks/
 automation-attacks: show
+estimated-time: 30
 ---
+
+{% include estimated-time.html %}
 
 <div class="embed-responsive embed-responsive-16by9">
   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/5ZWxfs-9nYY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

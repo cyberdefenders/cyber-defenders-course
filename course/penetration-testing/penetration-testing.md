@@ -5,7 +5,11 @@ title: Penetration Testing
 description: Overview of Cyber Security Topics and Career Paths
 permalink: /penetration-testing/
 penetration-testing: show
+estimated-time: 30
 ---
+
+{% include estimated-time.html %}
+
 <div class="embed-responsive embed-responsive-16by9">
   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BdSCIn50xjc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div><br>

@@ -10,19 +10,18 @@ penetration-testing: show
   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BdSCIn50xjc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div><br>
 
-# Overview
+## Overview
 A penetration tester tests the security of applications or networks to find vulnerabilities. Finding vulnerabilities is key to staying a step ahead of hackers who would want to do damage. In order to protect against a hacker, you must in a way think like a hacker. To get a better idea of how hacking works we will go through a demonstration of an attack.
 
-# Environment Setup
+## Environment Setup
 In a previous section we setup our simulation environment with Virtualbox. For our penetration tests we want to create an isolated network to communicate between our two systems. We will be using Kali Linux and a Windows XP SP2 (Service Pack 2) machine.
 
 If you want to following along a copy of Windows XP SP2 on ebay for less than $20. Remember this demo lab is optional so don't worry about trying to find a copy of Windows if you aren't trying this out yourself. We will use Kali for a later lab so make sure that is set up.
 
 There are a couple of settings we need to take a look at to setup a localized network. Go to the global network settings in Virtualbox. The host network adapter and DCHCP server must be fixed. Once that is done we can go into the network settings on Kali and Windows and change them to host only adapters. Now Kali and Windows XP can communicate back and forth without accessing our actual network.
 
-# Reconnaissance & Scanning
-### How do we find out who is vulnerable?
-Before we start actually trying to attack the Windows machine, we must know more about it. To find out more about systems on a network we go through a phases of Reconnaissance and Scanning & Enumeration. What makes these different?
+## Reconnaissance & Scanning
+How do we find out who is vulnerable? Before we start actually trying to attack the Windows machine, we must know more about it. To find out more about systems on a network we go through a phases of Reconnaissance and Scanning & Enumeration. What makes these different?
 
 ### Reconnaissance
 Reconnaissance is a completely passive in that we will look at all available information without actually reaching out to target systems. Usually this means finding out as much as possible about the target systems or applications by searching online.
@@ -35,16 +34,14 @@ Open up ZenMap by typing `zenmap &` in the terminal. We will scan a range of IP 
 
 Now all we need to do is choose the intensity of our scan. The drop down on the right of the target box shows us the variety of scans we can use. The three scans we will use are a ping scan, quick scan, and an intense scan. These scans describe how much information we will look get based on the scan. The increased intensity also increases the amount of noise being made during the scan.
 
-##### Ping Scan
-A ping scan just checks to see if the door is there. So any available systems on the network will show up. In our case that should be two: Kali and Windows.
+- Ping Scan
+  * A ping scan just checks to see if the door is there. So any available systems on the network will show up. In our case that should be two: Kali and Windows.
+- Quick Scan
+  * The quick scan will reveal what ports are available for each system. When we perform our exploit we will be connecting to one of those open ports to drop our payload.
+- Intense Scan
+  * The intense scan will give the most information. It will give open ports, traceroute, IP address, and operating system information. The results for the intense scan verify that the system on the local network is Windows XP SP2. This is important information since our exploit only works on Windows systems SP2 and before.
 
-##### Quick Scan
-The quick scan will reveal what ports are available for each system. When we perform our exploit we will be connecting to one of those open ports to drop our payload.
-
-##### Intense Scan
-The intense scan will give the most information. It will give open ports, traceroute, IP address, and operating system information. The results for the intense scan verify that the system on the local network is Windows XP SP2. This is important information since our exploit only works on Windows systems SP2 and before.
-
-# Lab: Ms08_067 Attack Demo
+## Lab: Ms08_067 Attack Demo
 This lab will go through the meat of the attack where the action happens. This is the gaining access phase.
 
 <br>
@@ -61,7 +58,7 @@ Metasploit is a penetration testing framework that comes with Kali. We will use 
 
 At this point we have access to the windows system and have access to the windows terminal. From here we can modify information, access data, and perform other attacks. To perform additional attacks we will switch to the meterpreter console inside our terminal. Meterpreter gives us more tools to work with. We can now perform keylogging, webcam and screen recording and other attacks.
 
-#### Lab Command List (tabbed area for each section of lab)
+### Lab Command List (tabbed area for each section of lab)
 ~~~~
 $ msfconsole
 $ search ms08_067_netapi
@@ -82,7 +79,7 @@ $ exploit
 > hash dump
 ~~~~
 
-# Exercise Walkthrough
+## Exercise Walkthrough
 ### Who is on the network?
 This exercise explores how we can identify vulnerable systems by network scanning. Network scanning is a useful tool for understanding how a network is laid out. Like in the attack demo we can do this scanning with Zenmap.
 
@@ -98,5 +95,5 @@ This exercise explores how we can identify vulnerable systems by network scannin
 ### Exercise Questions
 For this assignment we will be scanning [scanme.nmap.org](scanme.nmap.org) to get familiar with scanning. Run a ping, quick, and intense scan. What is the IP Address of the website? Which ports are open and which are closed?. What operating system and version is the website running?
 
-# Additional Resources
+## Additional Resources
 For more information about port scanning check out these articles:

@@ -6,7 +6,9 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600" rel="stylesheet" type="text/css">
+<!--	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet"> -->
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:300,400" rel="stylesheet">
 
   <!-- Local Stylesheet & Shortcut Icon -->
   <link rel="shortcut icon" href="/cyber-defenders-course//assets/img/Logo.png">
@@ -94,17 +96,65 @@
             <a href="/cyber-defenders-course//cyber-security-overview/" class="nav-link py-1">
               Career Paths
             </a>
-            <a href="/cyber-defenders-course//cyber-security-overview/" class="nav-link py-1">
+            <a href="/cyber-defenders-course//pre-requisites/" class="nav-link py-1">
               Pre-Requisites
             </a>
-            <a href="/cyber-defenders-course//cyber-security-overview/" class="nav-link py-1">
+            <a href="/cyber-defenders-course//installation/" class="nav-link py-1">
               Tools
             </a>
-            <a href="/cyber-defenders-course//cyber-security-overview/" class="nav-link py-1">
+            <a href="/cyber-defenders-course//installation/" class="nav-link py-1">
               Testing Environment
             </a>
             <a href="/cyber-defenders-course//cyber-security-overview/" class="nav-link py-1">
               What's Next
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="course-toc-item">
+    <a href="#nav-pre-reqs" data-toggle="collapse" aria-expanded="false" aria-controls="nav-pre-reqs">
+      <a class="course-toc-link" href="/cyber-defenders-course//pre-requisites/">Pre-Requisites</a>
+    </a>
+
+    <div class="collapse " id="nav-pre-reqs">
+      <div class="nav">
+        <ul class="nav flex-column">
+          <li class="nav-item py-0">
+            <a href="/cyber-defenders-course//pre-requisites/" class="nav-link py-1">
+              Pre-Requisites
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="course-toc-item">
+    <a href="#nav-install" data-toggle="collapse" aria-expanded="false" aria-controls="nav-install">
+      <a class="course-toc-link" href="/cyber-defenders-course//installation/">Install Guide</a>
+    </a>
+
+    <div class="collapse " id="nav-install">
+      <div class="nav">
+        <ul class="nav flex-column">
+          <li class="nav-item py-0">
+            <a href="/cyber-defenders-course//installation/" class="nav-link py-1">
+              Environment Setup
+            </a>
+            <a href="/cyber-defenders-course//installation/" class="nav-link py-1">
+              VirtualBox
+            </a>
+            <a href="/cyber-defenders-course//installation/" class="nav-link py-1">
+              Kali Linux
+            </a>
+            <a href="/cyber-defenders-course//installation/" class="nav-link py-1">
+              Windows XP
+            </a>
+            <a href="/cyber-defenders-course//installation/" class="nav-link py-1">
+              ZenMap
             </a>
           </li>
         </ul>
@@ -281,19 +331,18 @@
 </div>
 <p><br /></p>
 
-<h1 id="overview">Overview</h1>
+<h2 id="overview">Overview</h2>
 <p>A penetration tester tests the security of applications or networks to find vulnerabilities. Finding vulnerabilities is key to staying a step ahead of hackers who would want to do damage. In order to protect against a hacker, you must in a way think like a hacker. To get a better idea of how hacking works we will go through a demonstration of an attack.</p>
 
-<h1 id="environment-setup">Environment Setup</h1>
+<h2 id="environment-setup">Environment Setup</h2>
 <p>In a previous section we setup our simulation environment with Virtualbox. For our penetration tests we want to create an isolated network to communicate between our two systems. We will be using Kali Linux and a Windows XP SP2 (Service Pack 2) machine.</p>
 
 <p>If you want to following along a copy of Windows XP SP2 on ebay for less than $20. Remember this demo lab is optional so don’t worry about trying to find a copy of Windows if you aren’t trying this out yourself. We will use Kali for a later lab so make sure that is set up.</p>
 
 <p>There are a couple of settings we need to take a look at to setup a localized network. Go to the global network settings in Virtualbox. The host network adapter and DCHCP server must be fixed. Once that is done we can go into the network settings on Kali and Windows and change them to host only adapters. Now Kali and Windows XP can communicate back and forth without accessing our actual network.</p>
 
-<h1 id="reconnaissance--scanning">Reconnaissance &amp; Scanning</h1>
-<h3 id="how-do-we-find-out-who-is-vulnerable">How do we find out who is vulnerable?</h3>
-<p>Before we start actually trying to attack the Windows machine, we must know more about it. To find out more about systems on a network we go through a phases of Reconnaissance and Scanning &amp; Enumeration. What makes these different?</p>
+<h2 id="reconnaissance--scanning">Reconnaissance &amp; Scanning</h2>
+<p>How do we find out who is vulnerable? Before we start actually trying to attack the Windows machine, we must know more about it. To find out more about systems on a network we go through a phases of Reconnaissance and Scanning &amp; Enumeration. What makes these different?</p>
 
 <h3 id="reconnaissance">Reconnaissance</h3>
 <p>Reconnaissance is a completely passive in that we will look at all available information without actually reaching out to target systems. Usually this means finding out as much as possible about the target systems or applications by searching online.</p>
@@ -306,16 +355,25 @@
 
 <p>Now all we need to do is choose the intensity of our scan. The drop down on the right of the target box shows us the variety of scans we can use. The three scans we will use are a ping scan, quick scan, and an intense scan. These scans describe how much information we will look get based on the scan. The increased intensity also increases the amount of noise being made during the scan.</p>
 
-<h5 id="ping-scan">Ping Scan</h5>
-<p>A ping scan just checks to see if the door is there. So any available systems on the network will show up. In our case that should be two: Kali and Windows.</p>
+<ul>
+  <li>Ping Scan
+    <ul>
+      <li>A ping scan just checks to see if the door is there. So any available systems on the network will show up. In our case that should be two: Kali and Windows.</li>
+    </ul>
+  </li>
+  <li>Quick Scan
+    <ul>
+      <li>The quick scan will reveal what ports are available for each system. When we perform our exploit we will be connecting to one of those open ports to drop our payload.</li>
+    </ul>
+  </li>
+  <li>Intense Scan
+    <ul>
+      <li>The intense scan will give the most information. It will give open ports, traceroute, IP address, and operating system information. The results for the intense scan verify that the system on the local network is Windows XP SP2. This is important information since our exploit only works on Windows systems SP2 and before.</li>
+    </ul>
+  </li>
+</ul>
 
-<h5 id="quick-scan">Quick Scan</h5>
-<p>The quick scan will reveal what ports are available for each system. When we perform our exploit we will be connecting to one of those open ports to drop our payload.</p>
-
-<h5 id="intense-scan">Intense Scan</h5>
-<p>The intense scan will give the most information. It will give open ports, traceroute, IP address, and operating system information. The results for the intense scan verify that the system on the local network is Windows XP SP2. This is important information since our exploit only works on Windows systems SP2 and before.</p>
-
-<h1 id="lab-ms08_067-attack-demo">Lab: Ms08_067 Attack Demo</h1>
+<h2 id="lab-ms08_067-attack-demo">Lab: Ms08_067 Attack Demo</h2>
 <p>This lab will go through the meat of the attack where the action happens. This is the gaining access phase.</p>
 
 <p><br /></p>
@@ -332,7 +390,7 @@
 
 <p>At this point we have access to the windows system and have access to the windows terminal. From here we can modify information, access data, and perform other attacks. To perform additional attacks we will switch to the meterpreter console inside our terminal. Meterpreter gives us more tools to work with. We can now perform keylogging, webcam and screen recording and other attacks.</p>
 
-<h4 id="lab-command-list-tabbed-area-for-each-section-of-lab">Lab Command List (tabbed area for each section of lab)</h4>
+<h3 id="lab-command-list-tabbed-area-for-each-section-of-lab">Lab Command List (tabbed area for each section of lab)</h3>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ msfconsole
 $ search ms08_067_netapi
 $ use exploit/windows/smb/ms08_067_netapi
@@ -352,7 +410,7 @@ $ exploit
 &gt; hash dump
 </code></pre></div></div>
 
-<h1 id="exercise-walkthrough">Exercise Walkthrough</h1>
+<h2 id="exercise-walkthrough">Exercise Walkthrough</h2>
 <h3 id="who-is-on-the-network">Who is on the network?</h3>
 <p>This exercise explores how we can identify vulnerable systems by network scanning. Network scanning is a useful tool for understanding how a network is laid out. Like in the attack demo we can do this scanning with Zenmap.</p>
 
@@ -372,7 +430,7 @@ $ exploit
 <h3 id="exercise-questions">Exercise Questions</h3>
 <p>For this assignment we will be scanning <a href="scanme.nmap.org">scanme.nmap.org</a> to get familiar with scanning. Run a ping, quick, and intense scan. What is the IP Address of the website? Which ports are open and which are closed?. What operating system and version is the website running?</p>
 
-<h1 id="additional-resources">Additional Resources</h1>
+<h2 id="additional-resources">Additional Resources</h2>
 <p>For more information about port scanning check out these articles:</p>
 
     </div>
@@ -413,6 +471,6 @@ $ exploit
   anchors.add('h1','h2','h3','h4','h5','h6');
 </script> -->
 
-  
+
 </body>
 </html>

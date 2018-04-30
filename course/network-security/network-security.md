@@ -78,18 +78,18 @@ Very easy to observe information being transmitted over Wi-Fi (attackers can use
   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wPwJqtjKS_w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div><br><br>
 
- Lab Exercise Goal:
+### Lab Exercise Goal:
 
 Observe Wi-Fi network traffic
 Filter and isolate specific traffic going from one device to a specific website
 Observe username and password sent in cleartext for login request to a website
 
-Requirements
+### Requirements
 
-A Wi-Fi hotspot (like your phone)/Wi-Fi router you own
-Wireshark installed on your computer
+- A Wi-Fi hotspot (like your phone)/Wi-Fi router you own
+- Wireshark installed on your computer
 
-Tool: Wireshark
+### Tool: Wireshark
 
 Free open-source software used for observing network traffic
 
@@ -97,58 +97,70 @@ Network troubleshooting and performance
 Education and learning
 (Attackers) nefarious sniffing of traffic
 
-Download it here: https://www.wireshark.org/#download
+`Download it here: https://www.wireshark.org/#download`
 
-Ethical Testing Environment
+### Ethical Testing Environment
 
 Use your own local wifi network (your own home wifi router or setup a hotspot on your mobile device in range of your computer)
 Only observe traffic from devices you own
 
-Step 1: Open wireshark and start capture
+### Lab Walkthrough
 
-Observe how much automatic network traffic is ongoing
+1. Open Wireshark and start capture
 
-Operating System Updates
-Email check
-Program updates
+    - Observe how much automatic network traffic is ongoing.
+    - Operating System Updates
+    - Email check
+    - Program updates
 
-Step 2: use your computer’s browser to visit the test website we have setup at http://security.enablingprogrammableself.com/index.php
-Step 3: Filter Wireshark traffic so it only shows traffic going to our test website
 
-Use operating system terminal app: Windows ‘Command Prompt’ / Mac ‘Terminal’
-Once in the terminal app, type: ‘ping security.enablingprogrammableself.com’
-ping is a networking utility that tests the reachability of a domain and in turn also gives us the current DNS IP translation for the domain
-Observe the IP of the destination server in the reply (ie. ‘75.119.202.178’
+2. Use your computer’s browser to visit the test website we have setup at http://security.enablingprogrammableself.com/index.php
 
-Step 4: Return to wireshark and enter this as a filter (‘ip.dst’)
 
-You should now only see traffic that is going to our test website
+3. Filter Wireshark traffic so it only shows traffic going to our test website
 
-Step 5: For purposes of this exercise we will ALSO filter on traffic leaving our test device (in this case the same computer you are using for Wireshark)
+    - Use operating system terminal app: Windows `Command Prompt` / Mac `Terminal`
+    - Once in the terminal app, type: `ping security.enablingprogrammableself.com`
+    ping is a networking utility that tests the reachability of a domain and in turn also gives us the current DNS IP translation for the domain
+    - Observe the IP of the destination server in the reply (ie. `75.119.202.178`)
 
-Find your device’s IP by entering ‘ipconfig’ (Windows) or ‘ifconfig’ (Mac/Linux)
-Note your device’s IPv4 address
-Return to wireshark and modify your filter to ALSO filter on ip.src (the IP you just looked up in this step)
-You are now only seeing traffic from your test device reaching our test website
 
-Step 6: Get a ‘clean slate’ to observe traffic
+4. Return to Wireshark and enter this as a filter (`ip.dst`)
 
-Stop the capture and then hit capture again (you can hit ‘continue without saving’)
-Make sure your IP src/dst filter is enabled again
+    - You should now only see traffic that is going to our test website
 
-Step 7: Go visit http://security.enablingprogrammableself.com/index.php again (hit enter, not reload)
 
-Observe the TCP handshake to setup the communication
-Observe the HTTP GET requests
-Click on the first HTTP GET request for /index.php
-Right click on this entry and choose to ‘Follow’ the ‘HTTP Stream’
-How many HTTP responses did the browser return for the original GET request?
+5. For purposes of this exercise we will ALSO filter on traffic leaving our test device (in this case the same computer you are using for Wireshark)
 
-Step 8: Enter an email address (fake one is fine, try yourname@fake.email.com), and a password (try yourname_fakepassword) in the browser and hit submit
-Step 9: Go back to Wireshark and change the filter from the TCP stream back to our original ip src/dst combo filter
+    - Find your device’s IP by entering `ipconfig` (Windows) or `ifconfig` (Mac/Linux)
+    - Note your device’s IPv4 address
+    - Return to Wireshark and modify your filter to ALSO filter on `ip.src` (the IP you just looked up in this step)
+    - You are now only seeing traffic from your test device reaching our test website
 
-Scroll to the bottom and work your way backwards until you see a HTTP POST request from your test device
-Once again right click and ‘Follow’-->’HTTP’ stream
-Can you see the email address and password sent in cleartext as part of the POST request body?
 
-Step 10: Remove your filter and observe the deluge of traffic that filled up Wireshark while you were testing your device/website. Good luck finding your transactions without filters! :)
+6. Get a `clean slate` to observe traffic
+
+    - Stop the capture and then hit capture again (you can hit `continue without saving`)    
+    - Make sure your IP `src/dst` filter is enabled again
+
+
+7. Go visit http://security.enablingprogrammableself.com/index.php again (hit enter, not reload)
+
+    - Observe the TCP handshake to setup the communication
+    - Observe the HTTP GET requests
+    - Click on the first HTTP GET request for `/index.php`
+    - Right click on this entry and choose to `Follow` the `HTTP Stream`
+    - How many HTTP responses did the browser return for the original GET request?
+
+
+8. Enter an email address (fake one is fine, try ` yourname@fake.email.com`), and a password (try `yourname_fakepassword`) in the browser and hit `submit`
+
+
+9. Go back to Wireshark and change the filter from the TCP stream back to our original `ip src/dst` combo filter
+
+    - Scroll to the bottom and work your way backwards until you see a `HTTP POST` request from your test device
+    - Once again right click and `Follow --> HTTP` stream
+    - Can you see the email address and password sent in cleartext as part of the POST request body?
+
+
+10. Remove your filter and observe the deluge of traffic that filled up Wireshark while you were testing your device/website. Good luck finding your transactions without filters! :)

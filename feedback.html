@@ -3,4 +3,36 @@ layout: default
 feedback: active
 ---
 
-<h1 class="display-1 text-center">Feedback Page</h1>
+<div class="container my-5">
+
+  <h1 class="display-4">Send Feedback</h1>
+  <hr>
+
+  <div class="contact">
+    <!--<div class="alert alert-success"><strong><span class="glyphicon glyphicon-send"></span> Success! Message sent. (If form ok!)</strong></div> -->
+    <!--<div class="alert alert-danger"><span class="glyphicon glyphicon-alert"></span><strong> Error! Please check the inputs. (If form error!)</strong></div> -->
+    <div class="row">
+      <div class="col-lg-8">
+        <form role="form" action="http://formspree.io/cyberdefendersprogram@gmail.com" method="POST">
+          <input type="hidden" name="_next" value="{{ site.baseurl }}feedback" />
+          <input type="hidden" name="_subject" value="New submission!" />
+          <input type="text" name="_gotcha" style="display:none" />
+
+          <div class="form-group">
+            <label for="InputName"><h5>Your Name</h5></label>
+            <input type="text" class="form-control" name="name" id="InputName" placeholder="Enter Name" required>
+          </div>
+          <div class="form-group">
+            <label for="InputEmail"><h5>Your Email</h5></label>
+            <input type="email" class="form-control" id="InputEmail" name="_replyto" placeholder="Enter Email" required>
+          </div>
+          <div class="form-group">
+            <label for="InputMessage"><h5>Message</h5></label>
+            <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+          </div>
+          <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-dark">
+      </form>
+    </div>
+  </div>
+</div>
+</div>

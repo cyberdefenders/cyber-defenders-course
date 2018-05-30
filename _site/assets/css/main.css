@@ -69,6 +69,18 @@ a {
  align-items: center;
 }
 
+.jb-submit {
+ background-image: url('../img/tech.jpg');
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-attachment: local;
+ min-height: 60%;  /* Fallback for browsers do NOT support vh unit */
+ min-height: 60vh; /* These two lines are counted as one :-)       */
+
+ display: flex;
+ align-items: center;
+}
 /* Add media query (Sass) so the bar doesn't show in mobile*/
 .navbar-nav a.active {
   border-bottom: 2px solid #616161;

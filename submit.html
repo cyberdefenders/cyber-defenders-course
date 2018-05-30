@@ -3,6 +3,36 @@ layout: default
 submit: active
 ---
 
-<section id="submission-section">
+<div class="jb-submit jumbotron-fluid">
+  <div class="container mt-5 text-light">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="display-4">Take the Quiz</h1>
+        <p class="lead">There are a couple of questions that test your knowledge on material from lecture and lab.</p>
+      </div>
+      <div class="col-12 text-center py-4">
+          <a href="https://goo.gl/forms/5iHPjCi6SnsR9TQm1" class="btn btn-outline-light" target="_blank">Take Quiz</a>
+      </div>
+    </div>
+  </div>
+</div>
 
-</section>
+<div class="container my-5 ">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h1 class="display-4">Sign Up</h1>
+      <p class="lead">To find out about upcoming events and updates.</p>
+      <form role="form" action="">
+        <input type="hidden" name="_next" value="{{ site.baseurl }}submit" />
+        <input type="hidden" name="_subject" value="New submission!" />
+        <input type="text" name="_gotcha" style="display:none" />
+
+        <div class="form-group">
+          <input type="email" class="form-control" id="InputEmail" name="_replyto" placeholder="Enter Email" required>
+        </div>
+
+        <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-dark">
+      </form>
+    </div>
+  </div>
+</div>

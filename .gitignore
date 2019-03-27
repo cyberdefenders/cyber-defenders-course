@@ -25,3 +25,11 @@ Temporary Items
 ### Sass ###
 .sass-cache
 .1-tools
+
+## Bundler
+.bundle
+vendor
+
+## Gems
+Gemfile.lock
+Gemfile

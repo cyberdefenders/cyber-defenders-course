@@ -17,7 +17,7 @@ estimated-time: 30
 ## Overview
 A penetration tester tests the security of applications or networks to find vulnerabilities. Finding vulnerabilities is key to staying a step ahead of hackers who would want to do damage. In order to protect against a hacker, you must in a way think like a hacker. To get a better idea of how hacking works we will go through a demonstration of an attack.
 
-## Environment Setup
+## Environment Setup (Optional)
 In a previous section we setup our simulation environment with Virtualbox. For our penetration tests we want to create an isolated network to communicate between our two systems. We will be using Kali Linux and a Windows XP SP2 (Service Pack 2) machine.
 
 If you want to following along a copy of Windows XP SP2 on ebay for less than $20. Remember this demo lab is optional so don't worry about trying to find a copy of Windows if you aren't trying this out yourself. We will use Kali for a later lab so make sure that is set up.
@@ -45,7 +45,7 @@ Now all we need to do is choose the intensity of our scan. The drop down on the 
 - Intense Scan
   * The intense scan will give the most information. It will give open ports, traceroute, IP address, and operating system information. The results for the intense scan verify that the system on the local network is Windows XP SP2. This is important information since our exploit only works on Windows systems SP2 and before.
 
-## Lab: Ms08_067 Attack Demo
+## Lab: Ms08_067 Attack Demo (Optional)
 This lab will go through the meat of the attack where the action happens. This is the gaining access phase.
 
 <br>
@@ -57,7 +57,7 @@ This lab will go through the meat of the attack where the action happens. This i
 ### Gaining Access
 What does gaining access to a system look like. Normally you use your computer through a GUI (Graphical User Interface) where you can click on icons to navigate. Gaining access to the Windows XP system won't look the same. Our access will be restricted to just the command line interface. Good news is we can still do just as much on the command line as we can we the interface.
 
-### Metasploit
+### Metasploit (Optional)
 Metasploit is a penetration testing framework that comes with Kali. We will use metasploit to configure and run our attack since it has a large database of exploits and payloads for us to pull from. Once we run the exploit a new console will pop up in our terminal. This console is part of the meterpreter payload.
 
 At this point we have access to the windows system and have access to the windows terminal. From here we can modify information, access data, and perform other attacks. To perform additional attacks we will switch to the meterpreter console inside our terminal. Meterpreter gives us more tools to work with. We can now perform keylogging, webcam and screen recording and other attacks.

@@ -114,13 +114,13 @@ Only observe traffic from devices you own
     - Program updates
 
 
-2. Use your computer’s browser to visit the test website we have setup at http://security.enablingprogrammableself.com/index.php
+2. Use your computer’s browser to visit the test website we have setup at http://www.stealmylogin.com/demo.html
 
 
 3. Filter Wireshark traffic so it only shows traffic going to our test website
 
     - Use operating system terminal app: Windows `Command Prompt` / Mac `Terminal`
-    - Once in the terminal app, type: `ping security.enablingprogrammableself.com`
+    - Once in the terminal app, type: `stealmylogin.com`
     ping is a networking utility that tests the reachability of a domain and in turn also gives us the current DNS IP translation for the domain
     - Observe the IP of the destination server in the reply (ie. `75.119.202.178`)
 
